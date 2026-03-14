@@ -13,6 +13,8 @@ const Contact = () => {
   const handleSubmit = e => {
     e.preventDefault();
     setIsLoading(true);
+
+    emailjs.sendForm('service_w9g8243');
   };
 
   const handleFocus = e => {};
