@@ -5,11 +5,7 @@ import Island from '../models/Island.jsx';
 import Sky from '../models/Sky.jsx';
 import Bird from '../models/Bird.jsx';
 import Plane from '../models/Plane.jsx';
-{
-  /* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-  POPUP
-</div> */
-}
+import HomeInfo from '../components/HomeInfo.jsx';
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -35,7 +31,7 @@ const Home = () => {
       screenScale = [1.5, 1.5, 1.5];
       screenPosition = [0, -1.5, 0];
     } else {
-      screenScale = [3, 3, 3];
+      screenScale = [5, 5, 5];
       screenPosition = [0, -4, -4];
     }
     return [screenScale, screenPosition];
@@ -47,6 +43,10 @@ const Home = () => {
 
   return (
     <section className="w-full h-screen relative">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        {console.log('CURRENT STAGE', currentStage)}
+        {currentStage && <HomeInfo currentStage={currentStage} />}
+      </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${isRotating ? 'curson-grabbing' : 'cursor-grab'}`}
         camera={{ near: 0.1, far: 1000 }}
@@ -72,9 +72,9 @@ const Home = () => {
           />
           <Plane
             isRotating={isRotating}
-            planeScale={planeScale}
-            planePosition={planePosition}
-            rotation={[0, 20, 0]}
+            scale={planeScale}
+            position={planePosition}
+            rotation={[-0.4, 20, 0.8]}
           />
         </Suspense>
       </Canvas>
