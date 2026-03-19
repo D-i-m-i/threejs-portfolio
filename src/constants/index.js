@@ -1,9 +1,8 @@
 import { meta, shopify, starbucks, tesla } from '../assets/images';
 import {
-  car,
+  airvica,
   contact,
   css,
-  estate,
   express,
   git,
   github,
@@ -15,15 +14,19 @@ import {
   mui,
   nextjs,
   nodejs,
-  pricewise,
   react,
   redux,
   sass,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
   typescript,
+  drstavrou,
+  fusiovan,
+  vanish,
+  movinator,
+  game,
+  dice,
+  mapty,
+  bankist,
 } from '../assets/icons';
 
 export const skills = [
@@ -184,51 +187,69 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
-    description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+    iconUrl: movinator,
+    theme: 'btn-back-purple',
+    name: 'Movinator',
+    description: `A movies site. Find movies you'll enjoy without the hassle.`,
+    link: 'https://d-i-m-i.github.io/movinator/',
   },
   {
-    iconUrl: threads,
-    theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
-    description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
-  },
-  {
-    iconUrl: car,
+    iconUrl: drstavrou,
     theme: 'btn-back-blue',
-    name: 'Car Finding App',
+    name: `Dr Antonio Stavrou`,
     description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+      'Developed the personal website for the GP practice of Dr Antonio Stavrou.',
+    link: 'https://drantoniostavrou.com/',
   },
   {
-    iconUrl: snapgram,
+    iconUrl: airvica,
+    theme: 'btn-back-green',
+    name: 'AirVica',
+    description:
+      'Airborne Virus Risk Calculator - Contributed to this collaborative project between Cardiff and Oxford Universities by designing and front-end developing the UI interface of the project.',
+    link: 'https://people.maths.ox.ac.uk/griffit4/Airborne_Transmission/index.html',
+  },
+  {
+    iconUrl: fusiovan,
+    theme: 'btn-back-blue',
+    name: 'FusioVan',
+    description:
+      'A web-app to help DIY campervan builders design the electrical system of their van.',
+    link: 'https://github.com/D-i-m-i/fusiovan',
+  },
+  {
+    iconUrl: vanish,
     theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
-    description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
+    name: 'Vanish',
+    description: 'Camper vans marketplace.',
+    link: 'https://github.com/D-i-m-i/vanish',
   },
   {
-    iconUrl: estate,
+    iconUrl: dice,
+    theme: 'btn-back-pink',
+    name: 'First-to-100',
+    description: `A fun game 2-player dice game. First to 100 wins. If you roll a 1 you lose your current score and turn! Copyright: Jonas Schmedtman.`,
+    link: 'https://d-i-m-i.github.io/first-to-100-game/',
+  },
+  {
+    iconUrl: game,
     theme: 'btn-back-black',
-    name: 'Real-Estate Application',
-    description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
+    name: 'Guess-the-Number',
+    description: `A fun game where the aim is to guess the number in the least possible number of tries. What's your high score? Copyright: Jonas Schmedtman.`,
+    link: 'https://d-i-m-i.github.io/guessthenumbergame/',
   },
   {
-    iconUrl: summiz,
-    theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
-    description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+    iconUrl: mapty,
+    theme: 'btn-back-green',
+    name: 'Mapty',
+    description: `Sports activities logged on a map. Copyright: Jonas Schmedtman.`,
+    link: 'https://d-i-m-i.github.io/mapty/',
+  },
+  {
+    iconUrl: bankist,
+    theme: 'btn-back-black',
+    name: 'Bankist',
+    description: `Dummy bank website. Copyright: Jonas Schmedtman.`,
+    link: 'https://d-i-m-i.github.io/bankist/',
   },
 ];
