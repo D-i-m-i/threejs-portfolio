@@ -13,7 +13,10 @@ const Projects = () => {
         </span>
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-        <p>Lorem ipsum dolor PROJECTS EXPLANATION GOES HERE</p>
+        <p>
+          I love building things. I have created products for clients as well as
+          as part of my non-stop learning journey.
+        </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
         {projects.map(project => (
