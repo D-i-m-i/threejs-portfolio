@@ -4,9 +4,10 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { experiences, skills } from '../constants/index.js';
+import { experiences, skills, socialLinks } from '../constants/index.js';
 
 import CTA from '../components/CTA.jsx';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -22,6 +23,23 @@ const About = () => {
           Software Developer based in beautiful Cyprus, building full stack
           applications using a JavaScript-centric tech stack.
         </p>
+        <div className="flex gap-2">
+          {socialLinks.map(socialLink => (
+            <Link
+              to={socialLink.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-blue-600"
+              key={socialLink.name}
+            >
+              <img
+                src={socialLink.iconUrl}
+                alt="social-page"
+                className="w-5 h-5 object-contain"
+              />
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div className="py-10 flex flex-col">
