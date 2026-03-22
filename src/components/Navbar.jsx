@@ -32,7 +32,7 @@ const Navbar = () => {
             isActive ? 'text-blue-500' : 'text-black'
           }
         >
-          Contact
+          Contacts
         </NavLink>
       </nav>
     </header>
