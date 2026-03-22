@@ -1,4 +1,3 @@
-import { meta, shopify, starbucks, tesla } from '../assets/images';
 import {
   airvica,
   contact,
@@ -145,7 +144,7 @@ export const experiences = [
     company_name: 'University of Oxford',
     icon: oxford,
     iconBg: '#ffffff',
-    date: 'Jan 2023 - Present',
+    date: 'Oct 2022 - Apr 2023',
     points: [
       'Carried out the Front-End design and programming of a mathematical modelling research project',
       'Figma, HTML, CSS and JavaScript',
@@ -183,20 +182,20 @@ export const experiences = [
 ];
 
 export const socialLinks = [
-  {
-    name: 'Contact',
-    iconUrl: contact,
-    link: '/contact',
-  },
+  // {
+  //   name: 'Contact',
+  //   iconUrl: contact,
+  //   link: '/contact',
+  // },
   {
     name: 'GitHub',
     iconUrl: github,
-    link: 'https://github.com/YourGitHubUsername',
+    link: 'https://github.com/D-i-m-i',
   },
   {
     name: 'LinkedIn',
     iconUrl: linkedin,
-    link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+    link: 'https://www.linkedin.com/in/dimi/',
   },
 ];
 
